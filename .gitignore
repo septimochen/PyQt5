@@ -1,0 +1,10 @@
+.ipynb_checkpoints/
+*/.idea/
+*/.ipynb_checkpoints/
+.idea/misc.xml
+.idea/modules.xml
+.idea/Python.iml
+.idea/vcs.xml
+.idea/workspace.xml
+*.pyc
+.idea/
