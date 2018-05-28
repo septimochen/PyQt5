@@ -20,10 +20,10 @@ class Example(QWidget):
 
         btn = QPushButton('Check', self)
         btn.setToolTip('This is a <b>PushButton</b> widget')
-        btn.resize(btn.sizeHint())
-        btn.move(0, 170)
+        btn.resize(btn.sizeHint())  # The sizeHint() method gives a recommended size for the button.
+        btn.move(0, 1)
 
-        self.setGeometry(300,300,300,200)
+        self.setGeometry(300, 300, 300, 200)
         self.setWindowTitle('Dota 2')
         self.setWindowIcon(QIcon('dota_2.png'))
 
