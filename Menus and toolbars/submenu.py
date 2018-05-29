@@ -30,7 +30,7 @@ class Example(QMainWindow):
 
         impMenu = QMenu('Import', self)
         impAct = QAction('Import mail', self)
-        impMenu.addAction(impAct)
+        impMenu.addAction(impAct)  # Menu addAction can add a submenu
 
         exitAct = QAction(QIcon('exit.png'), 'Exit', self)
         exitAct.triggered.connect(qApp.quit)
