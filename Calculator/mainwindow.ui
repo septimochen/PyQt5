@@ -34,6 +34,9 @@ background-color : white</string>
     <property name="text">
      <string>0</string>
     </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
