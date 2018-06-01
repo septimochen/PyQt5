@@ -10,7 +10,8 @@ a QInputDialog dialog.
 """
 
 import sys
-from PyQt5.QtWidgets import (QWidget, QApplication, QPushButton, QLineEdit, QInputDialog)
+from PyQt5.QtWidgets import (QWidget, QApplication,
+                             QPushButton, QLineEdit, QInputDialog)
 
 
 class Example(QWidget):
@@ -20,8 +21,8 @@ class Example(QWidget):
 
     def initUI(self):
 
-        self.btn = QPushButton('Dialog', self)
-        self.btn.move(50, 50)
+        self.btn = QPushButton('Input', self)
+        self.btn.move(150, 50)
         self.btn.clicked.connect(self.showDialog)
 
         self.le = QLineEdit(self)
