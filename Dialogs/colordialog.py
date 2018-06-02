@@ -33,9 +33,9 @@ class Example(QWidget):
         self.frm = QFrame(self)
         self.frm.setStyleSheet("QWidget { background-color: %s }"
                                % col.name())
-        self.frm.setGeometry(130, 22, 100, 100)
+        self.frm.setGeometry(400, 22, 200, 200)
 
-        self.setGeometry(300, 300, 250, 180)
+        self.setGeometry(777, 555, 670, 449)
         self.setWindowTitle('Color dialog')
         self.show()
 
