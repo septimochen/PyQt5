@@ -28,19 +28,19 @@ class Example(QWidget):
         btn.setSizePolicy(QSizePolicy.Fixed,
                           QSizePolicy.Fixed)
 
-        btn.move(20, 20)
+        btn.move(100, 100)
 
         vbox.addWidget(btn)
 
         btn.clicked.connect(self.showDialog)
 
         self.lbl = QLabel('Knowledge only matters', self)
-        self.lbl.move(130, 20)
+        self.lbl.move(130, 100)
 
         vbox.addWidget(self.lbl)
         self.setLayout(vbox)
 
-        self.setGeometry(300, 300, 250, 180)
+        self.setGeometry(700, 600, 400, 300)
         self.setWindowTitle('Font dialog')
         self.show()
 
