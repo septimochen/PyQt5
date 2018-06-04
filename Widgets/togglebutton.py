@@ -61,7 +61,6 @@ class Example(QWidget):
         self.square.setStyleSheet("QWidget {background-color: %s}" % self.col.name())
 
 
-
 app = QApplication(sys.argv)
 ex = Example()
 sys.exit(app.exec_())
