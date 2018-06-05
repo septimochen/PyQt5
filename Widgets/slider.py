@@ -13,7 +13,7 @@ class Example(QWidget):
         sld = QSlider(Qt.Horizontal, self)
         sld.setGeometry(100, 80, 200, 30)
         sld.setFocusPolicy(Qt.NoFocus)
-        sld.valueChanged[int].connect(self.changeValue)
+        sld.valueChanged.connect(self.changeValue)
 
         self.label = QLabel(self)
         self.pixel1 = QPixmap('mute.png')
@@ -23,7 +23,6 @@ class Example(QWidget):
 
         self.label.setPixmap(self.pixel1.scaled(35, 40, Qt.IgnoreAspectRatio, Qt.FastTransformation))
         self.label.setGeometry(40, 75, 40, 40)
-
 
         self.setGeometry(500, 500, 340, 200)
         self.setWindowTitle('QSlider')
