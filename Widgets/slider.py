@@ -11,19 +11,33 @@ class Example(QWidget):
 
     def initUI(self):
         sld = QSlider(Qt.Horizontal, self)
-        sld.setGeometry(200, 100, 300, 30)
+        sld.setGeometry(100, 80, 200, 30)
         sld.setFocusPolicy(Qt.NoFocus)
+        sld.valueChanged[int].connect(self.changeValue)
 
         self.label = QLabel(self)
-        self.label.setPixmap(QPixmap('mute.png'))
-        self.label.setGeometry(160, 40, 500, 500)
+        self.pixel1 = QPixmap('mute.png')
+        self.pixel2 = QPixmap('min.png')
+        self.pixel3 = QPixmap('med.png')
+        self.pixel4 = QPixmap('max.png')
+
+        self.label.setPixmap(self.pixel1.scaled(35, 40, Qt.IgnoreAspectRatio, Qt.FastTransformation))
+        self.label.setGeometry(40, 75, 40, 40)
 
 
-
-
-        self.setGeometry(500, 500, 640, 420)
+        self.setGeometry(500, 500, 340, 200)
         self.setWindowTitle('QSlider')
         self.show()
+
+    def changeValue(self, value):
+        if value == 0:
+            self.label.setPixmap(self.pixel1.scaled(35, 40, Qt.IgnoreAspectRatio, Qt.FastTransformation))
+        elif 0 < value <= 30:
+            self.label.setPixmap(self.pixel2.scaled(35, 40, Qt.IgnoreAspectRatio, Qt.FastTransformation))
+        elif 30 < value <= 70:
+            self.label.setPixmap(self.pixel3.scaled(35, 40, Qt.IgnoreAspectRatio, Qt.FastTransformation))
+        else:
+            self.label.setPixmap(self.pixel4.scaled(35, 40, Qt.IgnoreAspectRatio, Qt.FastTransformation))
 
 
 app = QApplication(sys.argv)
