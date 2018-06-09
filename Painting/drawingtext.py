@@ -27,7 +27,7 @@ class Example(QWidget):
     def initUI(self):
         self.text = "This is why we play\nNBA"
 
-        self.setGeometry(300, 300, 280, 170)
+        self.setGeometry(400, 400, 320, 240)
         self.setWindowTitle('Drawing text')
         self.show()
 
@@ -38,8 +38,8 @@ class Example(QWidget):
         qp.end()
 
     def drawText(self, event, qp):
-        qp.setPen(QColor(168, 34, 3))
-        qp.setFont(QFont('Source Code Pro', 10))
+        qp.setPen(QColor(200, 34, 3))
+        qp.setFont(QFont('Source Code Pro', 14))
         qp.drawText(event.rect(), Qt.AlignCenter, self.text)
 
 
