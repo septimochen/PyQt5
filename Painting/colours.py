@@ -9,7 +9,7 @@ This example draws three rectangles in three
 """
 
 from PyQt5.QtWidgets import QWidget, QApplication
-from PyQt5.QtGui import QPainter, QColor, QBrush
+from PyQt5.QtGui import QPainter, QColor
 import sys
 
 
