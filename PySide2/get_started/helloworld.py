@@ -1,6 +1,6 @@
 import sys
 import random
-from PyQt5 import QtWidgets, QtGui, QtCore
+from PySide2 import QtCore, QtWidgets, QtGui
 
 
 class MyWidget(QtWidgets.QWidget):
