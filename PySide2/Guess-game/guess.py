@@ -36,9 +36,9 @@ class Ui_Form(object):
         font.setBold(True)
         self.lcdCount.setFont(font)
         self.lcdCount.setObjectName("lcdNumber")
-        self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setGeometry(QtCore.QRect(79, 190, 78, 31))
-        self.label_2.setObjectName("label_2")
+        self.attempLabel = QtWidgets.QLabel(Form)
+        self.attempLabel.setGeometry(QtCore.QRect(79, 190, 78, 31))
+        self.attempLabel.setObjectName("label_2")
 
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
@@ -48,7 +48,7 @@ class Ui_Form(object):
         self.guessButton.setText(QtWidgets.QApplication.translate("Form", "Guess", None, -1))
         self.text.setText(QtWidgets.QApplication.translate("Form", "0", None, -1))
         self.hintLabel.setText(QtWidgets.QApplication.translate("Form", "<html><head/><body><p><span style=\" font-size:9pt; font-weight:600;\">Please give a try!</span></p></body></html>", None, -1))
-        self.label_2.setText(QtWidgets.QApplication.translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">Attempts:</span></p></body></html>", None, -1))
+        self.attempLabel.setText(QtWidgets.QApplication.translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">Attempts:</span></p></body></html>", None, -1))
 
     def guess(self):
         self.temp = int(self.text.text())
