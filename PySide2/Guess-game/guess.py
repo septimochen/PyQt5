@@ -52,8 +52,9 @@ class Ui_Form(object):
 
     def guess(self):
         self.temp = int(self.text.text())
-        print(self.number)
-        self.count+=1
+        #print(self.number)
+        self.count += 1
+        self.lcdNumber.display(self.count)
 
         if self.temp > self.number:
             self.label.setText("Too Big!")
