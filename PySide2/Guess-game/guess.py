@@ -22,7 +22,7 @@ class Ui_Form(object):
         self.text.setAlignment(QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter)
         self.text.setObjectName("lineEdit")
         self.hintLabel = QtWidgets.QLabel(Form)
-        self.hintLabel.setGeometry(QtCore.QRect(80, 150, 151, 31))
+        self.hintLabel.setGeometry(QtCore.QRect(74, 150, 161, 31))
         self.hintLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.hintLabel.setObjectName("label")
         self.lcdCount = QtWidgets.QLCDNumber(Form)
@@ -37,7 +37,7 @@ class Ui_Form(object):
         self.lcdCount.setFont(font)
         self.lcdCount.setObjectName("lcdNumber")
         self.label_2 = QtWidgets.QLabel(Form)
-        self.label_2.setGeometry(QtCore.QRect(93, 190, 61, 31))
+        self.label_2.setGeometry(QtCore.QRect(79, 190, 78, 31))
         self.label_2.setObjectName("label_2")
 
         self.retranslateUi(Form)
@@ -47,7 +47,7 @@ class Ui_Form(object):
         Form.setWindowTitle(QtWidgets.QApplication.translate("Form", "Form", None, -1))
         self.guessButton.setText(QtWidgets.QApplication.translate("Form", "Guess", None, -1))
         self.text.setText(QtWidgets.QApplication.translate("Form", "0", None, -1))
-        self.hintLabel.setText(QtWidgets.QApplication.translate("Form", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">Please give a try!</span></p></body></html>", None, -1))
+        self.hintLabel.setText(QtWidgets.QApplication.translate("Form", "<html><head/><body><p><span style=\" font-size:9pt; font-weight:600;\">Please give a try!</span></p></body></html>", None, -1))
         self.label_2.setText(QtWidgets.QApplication.translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">Attempts:</span></p></body></html>", None, -1))
 
     def guess(self):
