@@ -1,14 +1,6 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'guess.ui',
-# licensing of 'guess.ui' applies.
-#
-# Created: Thu Jun 21 22:29:17 2018
-#      by: pyside2-uic  running on PySide2 5.11.0
-#
-# WARNING! All changes made in this file will be lost!
-
 from PySide2 import QtCore, QtGui, QtWidgets
+import sys
+
 
 class Ui_Form(object):
     def setupUi(self, Form):
@@ -49,3 +41,11 @@ class Ui_Form(object):
         self.label.setText(QtWidgets.QApplication.translate("Form", "<html><head/><body><p><span style=\" font-size:10pt; font-weight:600;\">Please give a try!</span></p></body></html>", None, -1))
         self.label_2.setText(QtWidgets.QApplication.translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">Attempts:</span></p></body></html>", None, -1))
 
+
+if __name__ == "__main__":
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_Form()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
