@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 """
-ZetCode PyQt5 tutorial
 
 In this example, we select a color value
 from the QColorDialog and change the background
