@@ -1,18 +1,1 @@
-In any case, don't forget to either
 
-set the QT_QPA_PLATFORM_PLUGIN_PATH environment variable: to point to your site-packages/PySide2/plugins/platforms in order to successfully run that. This can be done from within Python too:
-
-import os
->>> import sys
->>> from Qt import QtWidgets
->>> os.environ['QT_QPA_PLATFORM_PLUGIN_PATH'] = os.path.dirname(PySide2.__file__) + '/plugins/platforms'
->>> app = QtWidgets.QApplication(sys.argv)
-
-
-or
-
-create a qt.conf file in the folder of your python.exe with the content
-
-[Paths]
-Prefix = /dir_to_site-packages/PySide2
-Binaries = /dir_to_site-packages/PySide2
